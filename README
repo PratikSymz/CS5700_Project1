@@ -1,0 +1,20 @@
+In Project 1: Simple Client, I was briefly introduced to Socket programming. Our ongoing series of lectures enabled me to understand the layered structure of the internet and the E2E argument.
+
+High-level Approach: Based on the project's requirements, it was straightforward. I started with creating an SSLSocket in Java and sending the HELLO message to the server.
+        After receiving a confirmation message from the server, I created the evaluation method based on the expression format that seemed like an Infix Expression. 
+        Whereas, the presence of parentheses before and after every <operand> <operator> <operand> expression made it more effortless to parse and evaluate. 
+        
+        However, the "<<^" operator implementation in Java was causing multiple issues, none of which I could find solutions for as I did not have much experience with bitwise operators before. 
+        Hence, two days ago, I decided to shift my codebase to Python, a language I had prior experience with, and did not develop any issues as in Java. 
+        This was an unbelievable doing but was necessary, or I would have been late in my submission. Python seems to be the language I plan to use for future projects. 
+        
+        I have stuck with the O(n) algorithm of parsing the whole expression and evaluating it using stack implementation for the evaluation code. 
+        I could have implemented a binary tree which would have reduced the time complexity to O(logn); however, I did not have sufficient time.
+
+Challenges Faced: The primary challenge was developing a code with many cases to take care of and, for instance, terminating the program in case of receiving an invalid expression. 
+        Minor problems when considering that my code in Java could not evaluate XOR between negative integers without multiple steps, which made it quite complicated. 
+        And shifting the entire codebase to Python came with its challenges, but changing my project to Python was a good decision in the grand scheme of things.
+
+Code Testing: The first series of tests involved detecting successful delivery of the HELLO message and subsequently successfully retrieving the EVAL message. 
+        Next was testing the Evaluation method to input the EVAL expressions provided as examples in the project description and provide expected results. 
+        Finally, testing to ensure that the code covers all the error cases.
